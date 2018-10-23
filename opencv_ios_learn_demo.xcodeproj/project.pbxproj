@@ -27,6 +27,7 @@
 		63F1F499217E2C6900E80F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F1F49B217E2C6900E80F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F1F49C217E2C6900E80F69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63F1F4A3217E316E00E80F69 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		936DF355FAC9900CBDABB94D /* Pods-opencv_ios_learn_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opencv_ios_learn_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-opencv_ios_learn_demo/Pods-opencv_ios_learn_demo.release.xcconfig"; sourceTree = "<group>"; };
 		DAB5E29C5463A971B898E70E /* Pods-opencv_ios_learn_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opencv_ios_learn_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-opencv_ios_learn_demo/Pods-opencv_ios_learn_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		EFDB13A39C83C81428579C1A /* libPods-opencv_ios_learn_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-opencv_ios_learn_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +84,7 @@
 				63F1F498217E2C6900E80F69 /* LaunchScreen.storyboard */,
 				63F1F49B217E2C6900E80F69 /* Info.plist */,
 				63F1F49C217E2C6900E80F69 /* main.m */,
+				63F1F4A3217E316E00E80F69 /* PrefixHeader.pch */,
 			);
 			path = opencv_ios_learn_demo;
 			sourceTree = "<group>";
@@ -335,6 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JX92W966H;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/opencv_ios_learn_demo/PrefixHeader.pch";
 				INFOPLIST_FILE = opencv_ios_learn_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,6 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2JX92W966H;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/opencv_ios_learn_demo/PrefixHeader.pch";
 				INFOPLIST_FILE = opencv_ios_learn_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
