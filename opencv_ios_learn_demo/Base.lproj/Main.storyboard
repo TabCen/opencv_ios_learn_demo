@@ -74,21 +74,56 @@
             </objects>
             <point key="canvasLocation" x="-138" y="89"/>
         </scene>
-        <!--View Controller-->
+        <!--Base View Controller-->
         <scene sceneID="34V-nl-GN6">
             <objects>
-                <viewController id="vYS-e9-6gI" sceneMemberID="viewController">
+                <viewController id="vYS-e9-6gI" customClass="TBBaseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMF-4V-NG8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ToR-Qm-SW4">
+                                <rect key="frame" x="67.5" y="74" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="19J-7G-pki"/>
+                                    <constraint firstAttribute="height" constant="128" id="7Hd-sE-Kji"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pOd-Gm-rqG">
+                                <rect key="frame" x="67.5" y="210" width="240" height="128"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3O1-at-m9B"/>
+                                    <constraint firstAttribute="height" constant="128" id="ADI-vn-RbB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpt-sE-nic">
+                                <rect key="frame" x="16" y="381" width="177" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnclicked:" destination="vYS-e9-6gI" eventType="touchUpInside" id="cjJ-0d-ehI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pOd-Gm-rqG" firstAttribute="centerX" secondItem="xt8-Ab-RNj" secondAttribute="centerX" id="5Dw-pE-OxF"/>
+                            <constraint firstItem="ToR-Qm-SW4" firstAttribute="top" secondItem="xt8-Ab-RNj" secondAttribute="top" constant="10" id="HKU-if-otv"/>
+                            <constraint firstItem="ToR-Qm-SW4" firstAttribute="centerX" secondItem="xt8-Ab-RNj" secondAttribute="centerX" id="IC0-Vn-y7n"/>
+                            <constraint firstItem="pOd-Gm-rqG" firstAttribute="top" secondItem="ToR-Qm-SW4" secondAttribute="bottom" constant="8" id="NuW-g9-k8G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xt8-Ab-RNj"/>
                     </view>
                     <navigationItem key="navigationItem" id="sgk-7C-7le"/>
+                    <connections>
+                        <outlet property="originImage" destination="ToR-Qm-SW4" id="01g-lr-7gQ"/>
+                        <outlet property="outImage" destination="pOd-Gm-rqG" id="ZI6-yF-rcC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usQ-aW-AJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2290" y="-460"/>
+            <point key="canvasLocation" x="2140" y="-458.32083958020991"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PbG-kQ-j5Y">

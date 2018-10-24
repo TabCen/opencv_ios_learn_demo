@@ -8,15 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		052C12A42EB2801705238C0F /* libPods-opencv_ios_learn_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDB13A39C83C81428579C1A /* libPods-opencv_ios_learn_demo.a */; };
+		63C588272180B4D8009B6597 /* Image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63C588262180B4D8009B6597 /* Image.bundle */; };
+		63C6C92021804E9D0058D50D /* CVUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63C6C91F21804E9D0058D50D /* CVUtil.mm */; };
 		63F1F48F217E2C6800E80F69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1F48E217E2C6800E80F69 /* AppDelegate.m */; };
 		63F1F492217E2C6800E80F69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1F491217E2C6800E80F69 /* ViewController.m */; };
 		63F1F495217E2C6800E80F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F1F493217E2C6800E80F69 /* Main.storyboard */; };
 		63F1F497217E2C6900E80F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F1F496217E2C6900E80F69 /* Assets.xcassets */; };
 		63F1F49A217E2C6900E80F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F1F498217E2C6900E80F69 /* LaunchScreen.storyboard */; };
 		63F1F49D217E2C6900E80F69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1F49C217E2C6900E80F69 /* main.m */; };
+		63F1F4A9217EEB9100E80F69 /* TBBaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63F1F4A8217EEB9100E80F69 /* TBBaseViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63C588262180B4D8009B6597 /* Image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Image.bundle; sourceTree = "<group>"; };
+		63C6C91E21804E9D0058D50D /* CVUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVUtil.h; sourceTree = "<group>"; };
+		63C6C91F21804E9D0058D50D /* CVUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVUtil.mm; sourceTree = "<group>"; };
 		63F1F48A217E2C6800E80F69 /* opencv_ios_learn_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opencv_ios_learn_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F1F48D217E2C6800E80F69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63F1F48E217E2C6800E80F69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		63F1F49B217E2C6900E80F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F1F49C217E2C6900E80F69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63F1F4A3217E316E00E80F69 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		63F1F4A7217EEB9100E80F69 /* TBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBBaseViewController.h; sourceTree = "<group>"; };
+		63F1F4A8217EEB9100E80F69 /* TBBaseViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TBBaseViewController.mm; sourceTree = "<group>"; };
 		936DF355FAC9900CBDABB94D /* Pods-opencv_ios_learn_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opencv_ios_learn_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-opencv_ios_learn_demo/Pods-opencv_ios_learn_demo.release.xcconfig"; sourceTree = "<group>"; };
 		DAB5E29C5463A971B898E70E /* Pods-opencv_ios_learn_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opencv_ios_learn_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-opencv_ios_learn_demo/Pods-opencv_ios_learn_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		EFDB13A39C83C81428579C1A /* libPods-opencv_ios_learn_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-opencv_ios_learn_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +83,10 @@
 		63F1F48C217E2C6800E80F69 /* opencv_ios_learn_demo */ = {
 			isa = PBXGroup;
 			children = (
+				63C588262180B4D8009B6597 /* Image.bundle */,
+				63C6C91E21804E9D0058D50D /* CVUtil.h */,
+				63C6C91F21804E9D0058D50D /* CVUtil.mm */,
+				63F1F4A6217EEB6000E80F69 /* base */,
 				63F1F48D217E2C6800E80F69 /* AppDelegate.h */,
 				63F1F48E217E2C6800E80F69 /* AppDelegate.m */,
 				63F1F490217E2C6800E80F69 /* ViewController.h */,
@@ -87,6 +99,15 @@
 				63F1F4A3217E316E00E80F69 /* PrefixHeader.pch */,
 			);
 			path = opencv_ios_learn_demo;
+			sourceTree = "<group>";
+		};
+		63F1F4A6217EEB6000E80F69 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				63F1F4A7217EEB9100E80F69 /* TBBaseViewController.h */,
+				63F1F4A8217EEB9100E80F69 /* TBBaseViewController.mm */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 		BA67263C7E6B2D64F079D748 /* Frameworks */ = {
@@ -159,6 +180,7 @@
 				63F1F49A217E2C6900E80F69 /* LaunchScreen.storyboard in Resources */,
 				63F1F497217E2C6900E80F69 /* Assets.xcassets in Resources */,
 				63F1F495217E2C6800E80F69 /* Main.storyboard in Resources */,
+				63C588272180B4D8009B6597 /* Image.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F1F492217E2C6800E80F69 /* ViewController.m in Sources */,
+				63C6C92021804E9D0058D50D /* CVUtil.mm in Sources */,
+				63F1F4A9217EEB9100E80F69 /* TBBaseViewController.mm in Sources */,
 				63F1F49D217E2C6900E80F69 /* main.m in Sources */,
 				63F1F48F217E2C6800E80F69 /* AppDelegate.m in Sources */,
 			);
