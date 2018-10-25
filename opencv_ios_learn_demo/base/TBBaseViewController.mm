@@ -42,6 +42,9 @@
         case 4:{
             [self scaleImage];
         }break;
+        case 5:{
+            [self affineTransform];
+        }
         default:
             break;
     }
@@ -184,7 +187,12 @@
 }
 
 
-///翻转
+///仿射变换
+-(void)affineTransform{
+    
+    
+    
+}
 
 
 
